@@ -35,5 +35,23 @@
 											</div>
 										</a>
 								</div>
+	<script>
+		function downloadPDF(pdf, name) {
+		const xhr = new XMLHttpRequest();
+		xhr.open('GET', `data:application/pdf;base64,${pdf}`, true);
+		xhr.responseType = 'blob';
+		xhr.onload = () => {
+			if (xhr.status === 200) {
+				const blob = xhr.response;
+				const downloadLink = document.createElement('a');
+				downloadLink.href = URL.createObjectURL(blob);
+				downloadLink.download = name;
+				downloadLink.click();
+				URL.revokeObjectURL(downloadLink.href); // Clean up the URL object
+			}
+		};
+		xhr.send();
+	}
+	</script>
   </body>
 </html>
