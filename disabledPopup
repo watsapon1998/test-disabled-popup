@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>testPage</title>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+</head>
+<body>
+<div class="Block-Bill-Order">
+
+  <input type="hidden" id="hdShippingType" val="">
+  <input type="hidden" id="shipping-type" value="Flash">
+  <div class="payment-page-content payment-page-credit no-padding">
+    <div class="other-discount">
+      <div id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_pnlPayment">
+
+
+
+        <div class="BlockContent box_SummaryOrder">
+          <div class="OrderSummary txt-center hidden">
+            <div class="txt-title-inshop"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblOrderId">รหัสสั่งซื้อ / Order ID</span>
+              <span class="color-pink"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblOrderIdValue">240300046</span></span></div>
+          </div>
+          <div class="box_Summary border-none hidden">
+            <div class="PaymentSummary" style="display:none">
+              <span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblPayment">Payment method:</span>
+              <span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblPaymentValue">บัตรเครดิต</span>
+            </div>
+            <div class="PaymentPriceDiscount hidden">
+              <div class="txt-Confirm-Order-left"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblPriceDiscount">ส่วนลด</span></div>
+              <div class="txt-Confirm-Order-right"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblPriceDiscountValue">0</span> บาท</div>
+            </div>
+            <div class="PaymentOrderDiscount hidden">
+              <div class="txt-Confirm-Order-left"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblorderDiscount">ส่วนลดอื่นๆ</span></div>
+              <div class="txt-Confirm-Order-right"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblorderDiscountValue">0.00</span> บาท</div>
+            </div>
+            <div class="PaymentPriceSummary hidden">
+              <div class="txt-Confirm-Order-left"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblTotalPrice">ยอดรวมสุทธิ</span></div>
+              <div class="txt-Confirm-Order-right"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblTotalPriceValue">430.00</span> บาท</div>
+            </div>
+            <div class="PaymentShipping">
+              <div class="txt-Confirm-Order-left"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblShipping">ช่องทางการจัดส่ง</span></div>
+              <div class="txt-Confirm-Order-right"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblShippingValue">Flash Express</span></div>
+            </div>
+          </div>
+          <div class="box_Summary hidden">
+            <div class="Paymentphone">
+              <div class="txt-Confirm-Order-left"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblPhone">เบอร์มือถือ</span></div>
+              <div class="txt-Confirm-Order-right"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblPhoneValue">0878034383</span></div>
+            </div>
+            <div class="PaymentEmail hidden">
+              <div class="txt-Confirm-Order-left"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblEmail">อีเมล</span></div>
+              <div class="txt-Confirm-Order-right"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblEmailValue">watsapon.was@gmail.com</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="box_Summary box_payment_selector">
+          <div class="payment-selector">
+            <div class="txt-headtotal color-pink"><b>กรุณาเลือกวิธีการชำระเงิน</b></div>
+            <label class="delivery-label" style="display:none"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblPaymenySel">vsm.paymentmethod</span></label>
+            <div class="font-14 FormErrorLabel validate-choosepayment" style="text-align:left;display:none"><span id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_lblvalidatechoosepayment">"<span class="txt-red">*กรุณาเลือกวิธีการชำระเงิน</span>"</span></div>
+            <div class="hidden">
+              <div class="SelectorClass">
+                <div id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_drpPayment_uniSelector">
+
+
+
+
+
+
+                  <div class="control-group-inline">
+                    <select name="p$lt$ctl08$pageplaceholder$p$lt$ctl01$PaymentForm$drpPayment$uniSelector$drpSingleSelect" id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_drpPayment_uniSelector_drpSingleSelect" class="DropDownField form-control" onchange="SetHash_p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_drpPayment_uniSelector(this); if (!US_ItemChanged(this, 'p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_drpPayment_uniSelector')) return false;">
+                      <option selected="selected" value="0" data-hash="07ae3a60e3079eaa8759b9673a55e1e63c7ec44b0009154da15b53e36879a15c">(none)</option>
+                      <option value="Transfer" data-hash="fd460c12cdc042eba70cb63064ae1081126e2b2a4aeace0c5f3294cb02ecd27b" class="DropDownItemEnabled">โอนเงิน</option>
+                      <option value="CreditCard" data-hash="ee656fe7c3268db378da6746942cfe4539e94003d062c205137e42b69edc8061" class="DropDownItemEnabled">บัตรเครดิต</option>
+
+                    </select>
+                  </div>
+
+
+
+
+                  <input type="hidden" name="p$lt$ctl08$pageplaceholder$p$lt$ctl01$PaymentForm$drpPayment$uniSelector$hdnDialogSelect" id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_drpPayment_uniSelector_hdnDialogSelect">
+                  <input type="hidden" name="p$lt$ctl08$pageplaceholder$p$lt$ctl01$PaymentForm$drpPayment$uniSelector$hdnIdentifier" id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_drpPayment_uniSelector_hdnIdentifier" value="4733be2f-031a-4153-8faf-378b964b6474">
+                  <input type="hidden" name="p$lt$ctl08$pageplaceholder$p$lt$ctl01$PaymentForm$drpPayment$uniSelector$hiddenField" id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_drpPayment_uniSelector_hiddenField">
+                  <input type="hidden" name="p$lt$ctl08$pageplaceholder$p$lt$ctl01$PaymentForm$drpPayment$uniSelector$hiddenSelected" id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_drpPayment_uniSelector_hiddenSelected">
+                  <input type="hidden" name="p$lt$ctl08$pageplaceholder$p$lt$ctl01$PaymentForm$drpPayment$uniSelector$hdnHash" id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_drpPayment_uniSelector_hdnHash" value="07ae3a60e3079eaa8759b9673a55e1e63c7ec44b0009154da15b53e36879a15c">
+                  <input type="hidden" name="p$lt$ctl08$pageplaceholder$p$lt$ctl01$PaymentForm$drpPayment$uniSelector$hdnValue" id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_drpPayment_uniSelector_hdnValue" value="0">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box_radiopayment">
+            <div class="col-xs-6 col-sm-6 warp_radiopayment">
+              <input type="radio" id="CreditCard_0" name="radiopayment" value="CreditCard">
+              <label for="CreditCard_0"><img src="/Rajdhevee/media/RCSkin-Upload/Online-Shop/Icon/pay-credit.png">
+                <div><b>บัตรเครดิต</b></div>
+              </label>
+            </div>
+            <div class="col-xs-6 col-sm-6 warp_radiopayment">
+              <input type="radio" id="Transfer_0" name="radiopayment" value="Transfer">
+              <label for="Transfer_0"><img src="/Rajdhevee/media/RCSkin-Upload/Online-Shop/Icon/pay-transfer-money.png">
+                <div><b>โอนเงิน</b></div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_pnlPaymentDataContainer" class="PaymentGatewayDataContainer tinyBox colorLine">
+
+        </div>
+
+      </div>
+
+      <div class="col-xs-12 txt-center box_Summary BTN">
+        <div class="terms-condition-wrapper Block-Form-BTN" style="">
+
+          <input type="button" id="btnSubmit" class="btn checkout-button btn-nextshop pull-right" value="ยืนยันการชำระเงิน" onclick="CheckTypepay()">
+          <input type="submit" name="p$lt$ctl08$pageplaceholder$p$lt$ctl01$PaymentForm$btnProcessPayment" value="Confirm" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;p$lt$ctl08$pageplaceholder$p$lt$ctl01$PaymentForm$btnProcessPayment&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_btnProcessPayment" class="ProcessPaymentButton btn btn-primary" style="display: none;">
+          <div id="kbankPayment" style="display: none;">
+            <form method="POST" action="/checkout">
+              <script type="text/javascript" src="https://dev-kpaymentgateway.kasikornbank.com/ui/v2/kpayment.min.js" data-apikey="pkey_test_21927AKGswDyA8k3QFCe2V5Hpl859068Gv0Ho" data-amount="1.00" data-currency="THB" data-payment-methods="card" data-name="Rajdhevee" data-mid="401321678895001">
+              </script>
+            </form>
+
+          </div>
+          <!--<input type="button" class="btn btn-backshoping pull-left" onclick="goBack()" value="ยกเลิก"  />-->
+        </div>
+        <input name="p$lt$ctl08$pageplaceholder$p$lt$ctl01$PaymentForm$hdorder" type="hidden" id="p_lt_ctl08_pageplaceholder_p_lt_ctl01_PaymentForm_hdorder" value="39833">
+
+        <script type="text/javascript">
+          $(document).ready(function() {
+            //$(".DropDownField option:first-child").text("(Please select)");
+            //$(".DropDownField option[value=ChoosePayment]").hide();
+            //$(".DropDownField option[value=ChoosePayment]").css('visibility', 'hidden');
+            //if( !($(".DropDownField option[value=ChoosePayment]").parent().is('span')) ) $(".DropDownField option[value=ChoosePayment]").wrap('<span>');
+            $("select[id*='PaymentForm_drpPayment_uniSelector_drpSingleSelect']").val('CreditCard');
+            //$('.box_radiopayment #CreditCard_0').prop('checked', true);
+            //$("select[id*=drpPayment_uniSelector_drpSingleSelect] option[value*='0']").prop('disabled',true);
+            $('input[type=submit][id*=PaymentForm_btnProcessPayment]').hide();
+            CheckStatusOrder();
+
+          });
+
+          function CheckTypepay() {
+            if ($('.box_radiopayment #CreditCard_0').is(':checked') || $('.box_radiopayment #Transfer_0').is(':checked')) {
+              var typepay = $('select[id*=uniSelector_drpSingleSelect]').val();
+              var invoice = $('span[id*=PaymentForm_lblOrderIdValue]').text();
+              var orderid = $('input[id*=hdorder]').val();
+              //console.log("chk:" + orderid + "<br/>" + invoice + "<br/>" + typepay);
+              if (typepay == "Transfer") {
+                //Update Type Payment and Redirec To Thankyou Page
+                UpdateData(1, orderid, invoice);
+                $(".validate-choosepayment").hide();
+              } else if (typepay == "CreditCard") {
+                //Update Type Payment and Redirec To Gateway kasikorn
+                UpdateData(2, orderid, invoice);
+                $(".validate-choosepayment").hide();
+              } else {
+                $(".validate-choosepayment").show();
+                $(".choose-payment-step .payment-selector .DropDownField").toggleClass("border-red");
+                //alert("กรุณาเลือก");
+              }
+            } else {
+              alert("กรุณาเลือกวิธีการชำระเงิน");
+              return false;
+            }
+          }
+
+          function UpdateData(type, orderid, invoice) {
+            var url = "https://www.rcskinclinic.com/CMSWebparts/RCSKIN/UpdatePayment.aspx?Type=" + type + "&OrderID=" + orderid + "&Action=Update";
+            $.ajax({
+              type: "POST",
+              url: url,
+              data: {},
+              success: function(data) {
+                //alert(data);
+                var result = new Array();
+                result = data.split("<!--split-->");
+                //alert(result[1]); alert(type);
+                if (result[1] == "Success") {
+                  if (type == 1) {
+                    window.location.href = "https://www.rcskinclinic.com/shop/Order-Complete.aspx?o=" + invoice + "&i=" + orderid + "&t=" + type + "";
+                  } else if (type == 2) {
+                    //alert("abcde");
+                    $('input[type=submit][id*=PaymentForm_btnProcessPayment]').click();
+                  }
+                }
+              },
+              error: function() {
+                console.log("error update payment");
+              }
+            });
+          }
+
+          function CheckStatusOrder() {
+            var useOrder = "";
+            var useAction = "";
+            var invoice = $('span[id*=PaymentForm_lblOrderIdValue]').text();
+            //var orderid = $('input[id*=hdorder]').val();
+            var Isorderid = getUrlParameter('o');
+            var Ismode = getUrlParameter('mode');
+            console.log("isor:" + Isorderid);
+
+            if (Ismode == "callback") {
+              useOrder = Isorderid;
+              useAction = "LoadCallback";
+            } else {
+              useOrder = Isorderid;
+              useAction = "Load";
+            }
+            console.log("useAction:" + useAction);
+            //console.log("chk:" + orderid + "<br/>" + invoice);
+            $.ajax({
+              type: "POST",
+              url: "https://www.rcskinclinic.com/CMSWebparts/RCSKIN/UpdatePayment.aspx?Type=0&OrderID=" + useOrder + "&Action=" + useAction,
+              data: {},
+              success: function(data) {
+                var result = new Array();
+                result = data.split("<!--split-->");
+
+                console.log("r1" + result[1]);
+                console.log("r2" + result[2]);
+                if (result[1] == "2" && result[2] == "1") //ถ้าจ่ายเงินแล้ว และประเภทชำระเป็นโอนเงิน
+                {
+                  window.location.href = "//www.rcskinclinic.com/shop/Order-Complete.aspx?o=" + result[3] + "&i=" + useOrder + "&t=" + result[2] + "";
+                } else if (result[1] == "2" && result[2] == "2") //ถ้าจ่ายเงินแล้ว และประเภทชำระเป็นบัตรเครดิต
+                {
+                  window.location.href = "//www.rcskinclinic.com/shop/Order-Complete-Credit.aspx?o=" + result[3] + "&i=" + useOrder + "&t=" + result[2] + "";
+                } else {
+                  $("#divData").css("display", "block");
+                }
+              },
+              error: function() {
+                console.log("error checkstatus");
+              }
+            });
+          }
+
+        </script>
+        <script>
+          /*$( document ).ready(function() {
+$(".SelectorClass select").val("CreditCard");          
+});*/
+          $('.box_radiopayment input:radio[name=radiopayment]').on("change", function() {
+
+            if (this.value == 'CreditCard') {
+              $('.SelectorClass select option[value="CreditCard"]').attr('selected', 'selected');
+              $('.SelectorClass select option[value="Transfer"]').removeAttr('selected', 'selected');
+              $("select[id*='PaymentForm_drpPayment_uniSelector_drpSingleSelect']").val('CreditCard');
+            } else if (this.value == 'Transfer') {
+              $('.SelectorClass select option[value="Transfer"]').attr('selected', 'selected');
+              $('.SelectorClass select option[value="CreditCard"]').removeAttr('selected', 'selected');
+              $("select[id*='PaymentForm_drpPayment_uniSelector_drpSingleSelect']").val('Transfer');
+            }
+          });
+
+        </script>
+      </div>
+    </div>
+
+    <!--<div class="Block-Bill-Order-num txt-title-inshop border-none txt-center">
+
+</div>
+              <div class="txt-headtotal"><b>สรุปยอดชำระเงิน</b></div> 
+              
+              <div class="Block-Bill-Order-Total">
+                <div id="p_lt_ctl08_pageplaceholder_p_lt_ctl04_ShoppingCartTotals_totalViewer" class="TotalViewer">
+    <div class="Label">
+        <span id="p_lt_ctl08_pageplaceholder_p_lt_ctl04_ShoppingCartTotals_lblLabel">ราคารวม</span>
+    </div>
+    <div class="Value">
+        <span id="p_lt_ctl08_pageplaceholder_p_lt_ctl04_ShoppingCartTotals_lblValue">0.00</span>
+    </div>
+</div>
+<div class="txt-Confirm-Order-left">ช่องทางการจัดส่ง</div>
+<div class="txt-Confirm-Order-right">Flash Express</div>
+              </div>
+              
+              <div class="Block-Bill-Order-Ass">
+                <div class="txt-Confirm-Order-left">เบอร์มือถือ</div>
+<div class="txt-Confirm-Order-right"></div><div class="txt-Confirm-Order-left">อีเมล์</div>
+<div class="txt-Confirm-Order-right"></div>
+              </div>
+              
+              <!--<div class="Block-Bill-Order-Payment">
+
+</div>-->
+
+    <!--<div class="Block-BTN-Confirm-Order">
+                
+              </div>-->
+
+  </div>
+</div>
+
+
+$(document).ready(function() {
+  setTimeout(function() {
+    //$(".payment-selector .DropDownField option:first-child").text("กรุณาเลือก");
+  }, 500);
+  $(".payment-page-content .checkout-button").val("ยืนยันการชำระเงิน");
+
+  var urlth = $('.languages nav ul li:last-child a').attr('href');
+  var urlen = $('.languages nav ul li:first-child a').attr('href');
+  var orderid = getUrlParameter('o');
+  urlth += '?o=' + orderid;
+  urlen += '?o=' + orderid;
+  $('.languages nav ul li:last-child a').attr('href', urlth);
+  $('.languages nav ul li:first-child a').attr('href', urlen);
+
+  $(".checkout-button").on("click", function(e) {
+    //$("select[id*=drpPayment_uniSelector_drpSingleSelect] option[value*='CreditCard']").attr('selected','selected');
+    //$("select[id*='PaymentForm_drpPayment_uniSelector_drpSingleSelect']").val('CreditCard');
+    //if($('.box_radiopayment #CreditCard_0').prop('checked')) {         
+    if ($('.box_radiopayment #CreditCard_0').is(':checked')) {
+      //alert("CreditCard_0");
+      //console.log("checked"); 
+      $("select[id*='PaymentForm_drpPayment_uniSelector_drpSingleSelect']").val('CreditCard');
+      //$("select[id*=drpPayment_uniSelector_drpSingleSelect] option[value*='CreditCard']").attr('selected','selected');
+    }
+    if ($('.box_radiopayment #Transfer_0').is(':checked')) {
+      //alert("Transfer_0");
+      $("select[id*='PaymentForm_drpPayment_uniSelector_drpSingleSelect']").val('Transfer');
+      //$("select[id*=drpPayment_uniSelector_drpSingleSelect] option[value*='Transfer']").attr('selected','selected');          
+    } else {
+      //alert("กรุณาเลือกวิธีการชำระเงิน");
+      //return false;
+    }
+  });
+  
+  $(".box_radiopayment input[type='radio']").click(function(){
+  	if($(this).attr("id") == "CreditCard_0") {
+    	$("#btnSubmit").hide();
+      $("#kbankPayment").show();
+    } else {
+    	$("#btnSubmit").show();
+      $("#kbankPayment").hide();
+    }
+  });
+});
+
+function getUrlParameter(sParam) {
+  var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+    sURLVariables = sPageURL.split('&'),
+    sParameterName,
+    i;
+  for (i = 0; i < sURLVariables.length; i++) {
+    sParameterName = sURLVariables[i].split('=');
+    if (sParameterName[0] === sParam) {
+      return sParameterName[1] === undefined ? true : sParameterName[1];
+    }
+  }
+}
+
+function checkdata() {
+  alert("abc");
+}
+
+function goBack() {
+  window.history.go(-1);
+}
+
+  </body>
+</html>
